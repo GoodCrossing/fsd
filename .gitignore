@@ -10,3 +10,5 @@ unix/cert.txt
 unix/whazzup.txt
 unix/refresh.expect
 unix/refreshmetar.sh
+dev/*
+.vscode/*

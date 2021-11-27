@@ -12,7 +12,7 @@ OBJS	= main.o support.o manage.o interface.o servinterface.o clinterface.o \
           client.o sysuser.o certificate.o mm.o process.o config.o \
 	  authenticate.o
 
-all: ../unix/fsd
+all: clean ../unix/fsd
 
 ../unix/fsd : $(OBJS)
 	$(CXX) $(CFLAGS) $(OBJS) ${LIBS} -o ../unix/fsd
@@ -28,3 +28,5 @@ install: all
 
 clean :
 	rm -f ${OBJS}
+dev : clean $(OBJS)
+	$(CXX) $(CFLAGS) $(OBJS) ${LIBS} -o ../dev/fsd
