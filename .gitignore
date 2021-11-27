@@ -1,4 +1,5 @@
 *.so
+*.o
 *.save
 unix/fsd.conf
 unix/log/
