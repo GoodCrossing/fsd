@@ -1,9 +1,9 @@
 
 CC	= gcc
 CXX	= c++
-CFLAGS	= -O2
-CPPFLAGS = 
-CXXFLAGS = -O2
+CFLAGS	= -O2 -Wno-write-strings
+CPPFLAGS = -Wno-write-strings
+CXXFLAGS = -O2 -Wno-write-strings
 DEFS	=   
 LIBS	= -lnsl -lm  -static
 
