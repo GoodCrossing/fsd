@@ -1,0 +1,12 @@
+*.so
+*.save
+unix/fsd.conf
+unix/log/
+log.*
+unix/metar.txt
+unix/motd.txt
+unix/fsd
+unix/cert.txt
+unix/whazzup.txt
+unix/refresh.expect
+unix/refreshmetar.sh

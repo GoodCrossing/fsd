@@ -1071,6 +1071,11 @@ void sysuser::execdump(char **array, int count)
 }
 void sysuser::execrefmetar(char **array, int count)
 {
+   if (metarmanager->source==SOURCE_FILE) {
+      uprintf("Refreshing METAR file.\r\n");
+      metarmanager->buildlist();
+      return;
+   }
    if (metarmanager->source==SOURCE_NETWORK)
    {
       uprintf("Servers doesn't use a local METAR file.\r\n");

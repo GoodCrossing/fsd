@@ -175,7 +175,7 @@ void cluser::execaa(char **s, int count)
       kill(KILL_COMMAND);
       return;
    }
-   if (atoi(s[6])!=NEEDREVISION)
+   if (atoi(s[6])!=NEEDREVISION&&atoi(s[6])!=NEEDREVISIONESSB)
    {
       showerror(ERR_REVISION, "");
       kill(KILL_PROTOCOL);
@@ -226,7 +226,7 @@ void cluser::execap(char **s, int count)
       kill(KILL_COMMAND);
       return;
    }
-   if (atoi(s[5])!=NEEDREVISION)
+   if (atoi(s[5])!=NEEDREVISION&&atoi(s[5])!=NEEDREVISIONESSB)
    {
       showerror(ERR_REVISION, "");
       kill(KILL_PROTOCOL);

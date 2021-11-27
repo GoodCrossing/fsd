@@ -45,7 +45,6 @@ class mm : public process
    char *metarhost, *metardir, *ftpemail;
    int passivemode;
    void setupnewfile();
-   void buildlist();
    int doparse(mmq *);
    void dodownload();
    void prepareline(char *);
@@ -57,6 +56,7 @@ class mm : public process
    virtual int calcmasks(fd_set *, fd_set *);
 
    public:
+   void buildlist();
    void startdownload();
    void stopdownload();
    int downloading, source;

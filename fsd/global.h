@@ -19,9 +19,10 @@
 	#define CLOSESOCKET(a) close(a) 
 #endif
 
-#define PRODUCT "FSFDT Windows FSD Beta from FSD V3.000 draft 9"
-#define VERSION "V3.000 d9"
+#define PRODUCT "Fancy-pants mildly custom FSD Server V1.3"
+#define VERSION "V1.3"
 #define NEEDREVISION 9
+#define NEEDREVISIONESSB 8 // this is a bodge to get simulated ATC to work
 
 /*
     WARNING!!!: The USERTIMEOUT (idle time of a SOCKET before it's dropped)
