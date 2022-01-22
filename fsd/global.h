@@ -20,7 +20,7 @@
 #endif
 
 #define PRODUCT "Fancy-pants mildly custom FSD Server V1.4"
-#define VERSION "V1.3"
+#define VERSION "V1.4"
 #define NEEDREVISION 9
 #define NEEDREVISIONESSB 8 // this is a bodge to get simulated ATC to work
 
