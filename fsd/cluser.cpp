@@ -204,6 +204,7 @@ void cluser::execaa(char **s, int count)
    }
    thisclient=new client(s[3], myserver, s[0], CLIENT_ATC, level, s[6], s[2],
       -1);
+   dolog(L_INFO, "Created user with cert %s and level %i", s[3], req);
    serverinterface->sendaddclient("*",thisclient, NULL, this, 0);
    readmotd();
 }
