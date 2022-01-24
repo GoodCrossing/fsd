@@ -151,6 +151,7 @@ int cluser::checklogin(char *id, char *pwd, int req)
    int max, ok=maxlevel(id, pwd, &max);
    if (!ok)
    {
+      dolog(L_INFO,"Received invalid login with CID %s", id);
       showerror(ERR_CIDINVALID, id);
       return -1;
    }
